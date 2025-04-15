@@ -79,6 +79,7 @@ public class ClientHandler extends Thread {
             prompt();
         }
 
+
         ChatRoom.getInstance().removeClient(this);
         ChatRoom.getInstance().broadcastSystemMessage("\"" + nickname + "\" hat den Raum verlassen.");
         socket.close();
